@@ -1,6 +1,6 @@
 {
   "name": "@veritem/useform",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Tiny form handler libarary for react",
   "main": "./dist/index.ts.cjs",
   "module": "./dist/index.ts.mjs",
