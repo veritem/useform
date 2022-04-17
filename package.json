@@ -1,6 +1,6 @@
 {
   "name": "@veritem/useform",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tiny form handler libarary for react",
   "main": "./dist/index.ts.cjs",
   "module": "./dist/index.ts.mjs",
@@ -18,7 +18,7 @@
   "scripts": {
     "stub": "unbuild --stub",
     "build": "unbuild",
-    "release": "pnpm build && bumpp package.json --commit --push --tag && pnpm publish"
+    "release": "pnpm build && bumpp package.json --commit --push --tag && pnpm publish --access public"
   },
   "repository": {
     "type": "git",
