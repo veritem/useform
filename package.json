@@ -2,14 +2,14 @@
   "name": "@veritem/useform",
   "version": "0.0.1",
   "description": "Tiny form handler libarary for react",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.ts.cjs",
+  "module": "./dist/index.ts.mjs",
+  "types": "./dist/index.ts.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.ts.cjs",
+      "default": "./dist/index.ts.mjs",
+      "types": "./dist/index.ts.d.ts"
     }
   },
   "files": [
