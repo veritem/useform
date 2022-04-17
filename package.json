@@ -1,0 +1,41 @@
+{
+  "name": "@veritem/useform",
+  "version": "0.0.1",
+  "description": "Tiny form handler libarary for react",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild",
+    "release": "pnpm build && bumpp package.json --commit --push --tag && pnpm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veritem/useForm.git"
+  },
+  "author": "Makuza Mugabo Verite <mugaboverite@gmail.com> (https://veritem.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veritem/useForm/issues"
+  },
+  "homepage": "https://github.com/veritem/useForm#readme",
+  "devDependencies": {
+    "bumpp": "^7.1.1",
+    "unbuild": "^0.7.4",
+    "vitest": "^0.9.3"
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  }
+}
