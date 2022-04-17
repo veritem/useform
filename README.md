@@ -10,7 +10,7 @@ Tiny hook to use form state in your component.
 import useForm  from '@veritem/useform' 
 
 export default function App(){
-    const {form, handleChange,inputs} = useForm({
+    const { handleChange , inputs } = useForm({
         name: '',
         email: '',
         password: ''
@@ -23,9 +23,9 @@ export default function App(){
 
     return (<section> 
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name" value={form.name} onChange={handleChange}/>
-            <input type="text" name="email" value={form.email} onChange={handleChange}/>
-            <input type="text" name="password" value={form.password} onChange={handleChange}/>
+            <input type="text" name="name" value={inputs.name} onChange={handleChange}/>
+            <input type="text" name="email" value={inputs.email} onChange={handleChange}/>
+            <input type="text" name="password" value={inputs.password} onChange={handleChange}/>
             <button type="submit">Submit</button>
         </form>
     </section>)
