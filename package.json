@@ -18,6 +18,7 @@
   "scripts": {
     "stub": "unbuild --stub",
     "build": "unbuild",
+    "test": "vitest",
     "release": "pnpm build && bumpp package.json --commit --push --tag && pnpm publish --access public"
   },
   "repository": {
@@ -32,10 +33,14 @@
   "homepage": "https://github.com/veritem/useForm#readme",
   "devDependencies": {
     "bumpp": "^7.1.1",
+    "happy-dom": "^2.55.0",
+    "react-test-renderer": "^18.0.0",
     "unbuild": "^0.7.4",
+    "vite": "^2.9.5",
     "vitest": "^0.9.3"
   },
   "dependencies": {
+    "@testing-library/react-hooks": "^8.0.0",
     "react": "^18.0.0"
   }
 }
