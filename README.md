@@ -4,7 +4,7 @@
 
 Tiny hook to use form state in your component.
 
-## Usage
+#### Usage
 
 ```ts
 import useForm  from '@veritem/useform' 
