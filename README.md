@@ -34,4 +34,4 @@ export default function App(){
 
 ### License
 
-[MIT](https://github.com/veritem/eslint-plugin-vitest/blob/main/LICENSE) Licence &copy; 2022 - present [veritem](https://github.com/veritem)
+[MIT](https://github.com/veritem/useform/blob/main/LICENSE) Licence &copy; 2022 - present [veritem](https://github.com/veritem)
