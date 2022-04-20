@@ -10,13 +10,11 @@ specifiers:
   vite: ^2.9.5
   vitest: ^0.9.3
 
-dependencies:
-  '@testing-library/react-hooks': 8.0.0_3d3603ccd3a261ff56545f11c384811d
-  react: 18.0.0
-
 devDependencies:
+  '@testing-library/react-hooks': 8.0.0_3d3603ccd3a261ff56545f11c384811d
   bumpp: 7.1.1
   happy-dom: 2.55.0
+  react: 18.0.0
   react-test-renderer: 18.0.0_react@18.0.0
   unbuild: 0.7.4
   vite: 2.9.5
@@ -188,7 +186,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
-    dev: false
+    dev: true
 
   /@babel/standalone/7.17.9:
     resolution: {integrity: sha512-9wL9AtDlga8avxUrBvQJmhUtJWrelsUL0uV+TcP+49Sb6Pj8/bNIzQzU4dDp0NAPOvnZR/7msFIKsKoCl/W1/w==}
@@ -377,7 +375,7 @@ packages:
       react: 18.0.0
       react-error-boundary: 3.1.4_react@18.0.0
       react-test-renderer: 18.0.0_react@18.0.0
-    dev: false
+    dev: true
 
   /@types/chai-subset/1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
@@ -1361,6 +1359,7 @@ packages:
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: true
 
   /jsesc/2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
@@ -1405,6 +1404,7 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+    dev: true
 
   /loupe/2.3.4:
     resolution: {integrity: sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==}
@@ -1644,7 +1644,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.17.9
       react: 18.0.0
-    dev: false
+    dev: true
 
   /react-is/18.0.0:
     resolution: {integrity: sha512-yUcBYdBBbo3QiPsgYDcfQcIkGZHfxOaoE6HLSnr1sPzMhdyxusbfKOSUbSd/ocGi32dxcj366PsTj+5oggeKKw==}
@@ -1676,7 +1676,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
+    dev: true
 
   /readable-stream/2.3.7:
     resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
@@ -1692,7 +1692,7 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
-    dev: false
+    dev: true
 
   /resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
