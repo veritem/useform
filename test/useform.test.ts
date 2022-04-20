@@ -1,20 +1,21 @@
 import { act, renderHook } from "@testing-library/react-hooks";
-import { describe, expect } from "vitest";
+import { expect, test } from "vitest";
 import useForm from "../src";
 
-// https://stackblitz.com/edit/vitest-dev-vitest-8ukiz3?file=src%2Fhooks%2FuseCounter.test.ts&initialPath=__vitest__
-describe("useForm", () => {
+test("useForm", () => {
   const { result } = renderHook(() =>
     useForm({
-      name: "",
+      name: "test",
       email: "",
       password: "",
     })
   );
 
+  expect(result.current.inputs.name).toEqual("test");
+
   act(() => {
-    result.current.inputs.name.onChange({ target: { value: "test" } });
+    result.current.clearForm();
   });
 
-  expect(result.current.inputs.name.value).toEqual("test");
+  expect(result.current.inputs.name).toEqual("");
 });
