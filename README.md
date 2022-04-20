@@ -7,28 +7,45 @@ Tiny hook to use form state in your component.
 #### Usage
 
 ```ts
-import useForm  from '@veritem/useform' 
+import useForm from '@veritem/useform';
 
-export default function App(){
-    const { handleChange , inputs } = useForm({
-        name: '',
-        email: '',
-        password: ''
-    })
+export default function App() {
+  const { handleChange, inputs, clearForm } = useForm({
+    name: '',
+    email: '',
+    password: '',
+  });
 
-    function handleSubmit(e){
-        e.preventDefault()
-        console.log(inputs)
-    }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(inputs);
+  }
 
-    return (<section> 
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="name" value={inputs.name} onChange={handleChange}/>
-            <input type="text" name="email" value={inputs.email} onChange={handleChange}/>
-            <input type="text" name="password" value={inputs.password} onChange={handleChange}/>
-            <button type="submit">Submit</button>
-        </form>
-    </section>)
+  return (
+    <section>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          value={inputs.name}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="email"
+          value={inputs.email}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="password"
+          value={inputs.password}
+          onChange={handleChange}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  );
 }
 ```
 
