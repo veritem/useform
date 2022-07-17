@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-export default function useForm<T = {}>(initial: T = {} as any) {
-  const [inputs, setInputs] = useState(initial);
+export default function useForm<T>(initial: T) {
+  const [inputs, setInputs] = useState<T>(initial);
   const initialValues = Object.values(initial).join("");
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function useForm<T = {}>(initial: T = {} as any) {
   function clearForm() {
     const blankState = Object.fromEntries(
       Object.entries(inputs).map(([key, value]) => [key, ""])
-    ) as any as T;
+    ) as unknown as T;
     setInputs(blankState);
   }
 

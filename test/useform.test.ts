@@ -4,12 +4,18 @@ import useForm from "../src";
 
 test("useForm", () => {
   const { result } = renderHook(() =>
-    useForm({
+    useForm<{
+      name: string;
+      email: string;
+      password: string;
+    }>({
       name: "test",
       email: "",
       password: "",
     })
   );
+
+
 
   expect(result.current.inputs.name).toEqual("test");
 
