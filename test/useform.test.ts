@@ -3,25 +3,25 @@ import { expect, test } from "vitest";
 import useForm from "../src";
 
 test("useForm", () => {
-  const { result } = renderHook(() =>
-    useForm<{
-      name: string;
-      email: string;
-      password: string;
-    }>({
-      name: "test",
-      email: "",
-      password: "",
-    })
-  );
+	const { result } = renderHook(() =>
+		useForm<{
+			name: string;
+			email: string;
+			password: string;
+		}>({
+			name: "test",
+			email: "",
+			password: "",
+		})
+	);
 
+	expect(result.current.inputs.name).toEqual("test");
 
+	expect(result.current.inputs.name).toEqual("test");
 
-  expect(result.current.inputs.name).toEqual("test");
+	act(() => {
+		result.current.clearForm();
+	});
 
-  act(() => {
-    result.current.clearForm();
-  });
-
-  expect(result.current.inputs.name).toEqual("");
+	expect(result.current.inputs.name).toEqual("");
 });
